@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SK Event Organizer</title>
   <style>
+    /* General Styles */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #111;
-      color: white;
+      background: #FFF5E1; /* Light pastel background */
+      color: #333;
       scroll-behavior: smooth;
     }
+    
+    /* Header Section */
     header {
       height: 100vh;
       display: flex;
@@ -20,22 +23,23 @@
       align-items: center;
       background: url('images/header-bg.jpg') center/cover no-repeat;
       background-blend-mode: overlay;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(255, 228, 196, 0.7); /* soft overlay */
       text-align: center;
     }
     header h1 {
       font-size: 3rem;
       margin: 0;
-      color: #fff;
+      color: #FF4081; /* festive pink */
     }
     header p {
       font-size: 1.2rem;
       margin: 15px 0;
       max-width: 600px;
+      color: #555;
     }
     header a {
-      background: #e91e63;
-      color: white;
+      background: #FFD700; /* golden button */
+      color: #800000; /* maroon text */
       padding: 12px 25px;
       border-radius: 30px;
       text-decoration: none;
@@ -43,8 +47,10 @@
       transition: 0.3s;
     }
     header a:hover {
-      background: #ff4081;
+      background: #FFC107;
     }
+
+    /* Section Titles */
     section {
       padding: 60px 20px;
       max-width: 1100px;
@@ -54,8 +60,10 @@
     h2 {
       font-size: 2.2rem;
       margin-bottom: 20px;
-      color: #ff4081;
+      color: #FF4081;
     }
+
+    /* Services & Gallery */
     .services, .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -63,29 +71,36 @@
       margin-top: 30px;
     }
     .card {
-      background: #1c1c1c;
+      background: #fff8dc;
+      color: #333;
       padding: 20px;
-      border-radius: 12px;
+      border-radius: 15px;
       transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .card:hover {
       transform: translateY(-5px);
-      background: #222;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
     }
     .card img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
       margin-bottom: 10px;
     }
+
+    /* Footer */
     footer {
-      background: #000;
+      background: #FFD700;
       text-align: center;
       padding: 30px 20px;
+      color: #800000;
+      font-weight: bold;
     }
     footer a {
-      color: #ff4081;
+      color: #800000;
       text-decoration: none;
     }
+
     /* Floating Buttons */
     .float-btn {
       position: fixed;
@@ -126,12 +141,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <h1>SK Event Organizer</h1>
-    <p>Making your special moments unforgettable — Baby showers, birthdays, festive decor, and more ✨</p>
+    <p>Making your special moments unforgettable — birthdays, baby showers, festivals, and more 🎉</p>
     <a href="#contact">Book Now</a>
   </header>
 
+  <!-- Services -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="services">
@@ -142,6 +159,7 @@
     </div>
   </section>
 
+  <!-- Gallery -->
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
@@ -152,6 +170,7 @@
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>📞 <strong>+91 9328881626</strong></p>
@@ -159,10 +178,12 @@
     <p>📍 Gujarat, India</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 SK Event Organizer. All Rights Reserved.</p>
   </footer>
 
+  <!-- Floating Buttons -->
   <div class="float-btn">
     <a href="https://wa.me/919328881626?text=Hello%20SK%20Event%20Organizer!%20I%20want%20to%20book%20an%20event." class="whatsapp" target="_blank" title="Chat on WhatsApp">
       <i class="fab fa-whatsapp"></i>
